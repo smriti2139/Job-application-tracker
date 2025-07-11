@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Tracker</h1>
+
+    <!-- 🔝 Top Controls -->
+    <div class="top-bar">
+      <button id="themeToggle">🌙 Toggle Theme</button>
+      <input type="text" id="searchInput" placeholder="Search by company..." />
+      <button id="downloadCsvBtn">⬇️ Export to CSV</button>
+    </div>
+
+    <!-- 📋 Application Form -->
+    <form id="jobForm">
+      <input type="text" id="company" placeholder="Company Name" required />
+      <input type="text" id="position" placeholder="Job Title" required />
+      <input type="date" id="date" required />
+      <select id="status" required>
+        <option value="">Select Status</option>
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Offer">Offer</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+      <button type="submit" id="submitBtn">Add Application</button>
+    </form>
+
+    <!-- 📊 Applications Table -->
+    <table id="jobTable">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Position</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Entries injected by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
