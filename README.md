@@ -27,5 +27,7 @@ It’s a practical tool for students, job seekers, or anyone applying to multipl
 ✅ Theme toggle (light/dark mode)  
 ✅ Data saved with `localStorage` (no database needed)  
 ✅ Fully responsive design — mobile-friendly  
-## 📸 Screenshot
 
+
+## 📸 Screenshot
+![Job Application Tracker Screenshot](Screenshot..png)
